@@ -28,6 +28,6 @@ cd signals/mit-bih-processed-signals/signals/
 curl -F 'file=@[nameofthefile.extension]' http://0.0.0.0:6000/classify/
 ```
 
-For quick tests, you can use sample files under_ signals/mit-bih-processed-signals/ _ directory
+For quick tests, you can use sample files under **signals/mit-bih-processed-signals/** directory
 
 
