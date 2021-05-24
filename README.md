@@ -8,14 +8,14 @@ PAC is a privacy-preserving neural network classifier based on secure two-party 
 
 Issue the following commands to build and run the containers:
 
-## Server Component:
+## Server-side Component:
 ```
 cd ppnn-2pc-server
 sudo docker build -t ppnn-2pc-server: latest .
 sudo docker run -p 5555:5000 -v /$PWD:/home -it ppnn-2pc-server
 ```
 
-## client Component:
+## Client-side Component:
 ```
 cd ppnn-2pc-client
 sudo docker build -t ppnn-2pc-client: latest .
