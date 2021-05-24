@@ -1,2 +1,2 @@
-# PAPAYA-PAC
+# PAPAYA Privacy-preserving Arrhythmia Classifier
 
