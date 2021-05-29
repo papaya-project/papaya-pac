@@ -32,11 +32,11 @@ RUN mkdir app
 COPY ABY.zip /app 
 WORKDIR /app
 RUN unzip ABY.zip
-RUN cd ABY/ && mkdir build 
+RUN cd ABY/ABY/ && mkdir build 
 RUN ls ABY/
-RUN cd ABY/build/ && cmake .. 
-RUN cd ABY/build/ && make 
-RUN cd ABY/build/ && make install
+RUN cd ABY/ABY/build/ && cmake ..
+RUN cd ABY/ABY/build/ && make 
+RUN cd ABY/ABY/build/ && make install
 COPY requirements.txt /app
 WORKDIR /app
 RUN pip3 install -r requirements.txt

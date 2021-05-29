@@ -16,7 +16,7 @@ app = Flask(__name__)
 @app.route('/<ip_server>/<url>/<port>/', methods=['GET','POST'])
 @app.route('/init/<ip_server>/<url>/<port>/', methods=['GET','POST'])
 def init(ip_server, url, port):
-    print ("test")
+    # print ("test")
 
     try:
         with open('/app/config/server_ip', 'w') as writeIPS:
@@ -169,7 +169,7 @@ def classify():
         print (server_ip, flush=True)
         #sleeptime.sleep(1)
         print ('cd 2pc_model_quantized_batches/ && ./client -a ' + str(server_ip) + ' -p ' + server_port + ' -i ' + str(line_counter))
-        os.system('cd 2pc_model_quantized_batches/ && ./client -a ' + str(server_ip) + ' -p ' + server_port + ' -i ' + str(line_counter) + " >> ../result_" + execution_time + ".txt")
+        os.system('cd 2pc_model_quantized_batches/ && ./client -a ' + str(server_ip) + ' -p ' + server_port + ' -i ' + str(line_counter) + ' >> ../result_' + execution_time + '.txt')
         
     #sleeptime.sleep(5)
     counter = 0
