@@ -11,14 +11,14 @@ Issue the following commands to build and run the containers:
 ## Server-side Component:
 ```
 cd ppnn-2pc-server
-sudo docker build -t ppnn-2pc-server: latest .
+sudo docker build -t ppnn-2pc-server:latest .
 sudo docker run -p 5555:5000 -v /$PWD:/home -it ppnn-2pc-server
 ```
 
 ## Client-side Component:
 ```
 cd ppnn-2pc-client
-sudo docker build -t ppnn-2pc-client: latest .
+sudo docker build -t ppnn-2pc-client:latest .
 sudo docker run --env-file env-file -p 6000:5000 -v /$PWD:/home -it ppnn-2pc-client
 ```
 Open a 3rd terminal window and type the following commands to run the classifier:
