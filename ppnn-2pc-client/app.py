@@ -166,10 +166,9 @@ def classify():
     # # os.system("nohup curl --insecure https://f2aa71.papaya.eu-de.containers.appdomain.cloud/classify/"+ str(line_counter)+"/ &")
 
     
-        print (server_ip, flush=True)
         #sleeptime.sleep(1)
         print ('cd 2pc_model_quantized_batches/ && ./client -a ' + str(server_ip) + ' -p ' + server_port + ' -i ' + str(line_counter))
-        os.system('cd 2pc_model_quantized_batches/ && ./client -a ' + str(server_ip) + ' -p ' + server_port + ' -i ' + str(line_counter) + ' >> ../result_' + execution_time + '.txt')
+        os.system("cd 2pc_model_quantized_batches/ && ./client -a " + str(server_ip) + " -p " + server_port + " -i " + str(line_counter) + " >> ../result_" + execution_time + ".txt")
         
     #sleeptime.sleep(5)
     counter = 0

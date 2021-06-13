@@ -65,18 +65,6 @@ int main(int argc, char** argv) {
 	string circuit = "none.aby";
 	e_mt_gen_alg mt_alg = MT_OT;
 
-#ifdef PCA
-	cout << "PCA is enabled" << endl;
-#else
-	cout << "PCA is disabled" << endl;
-#endif
-
-
-#ifdef V1
-	cout << "Using V1" << endl;
-#else
-	cout << "Using V2" << endl;
-#endif
 
 
 	vector<vector<double>> weight[2];

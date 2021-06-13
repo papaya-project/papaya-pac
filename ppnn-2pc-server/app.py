@@ -13,7 +13,6 @@ app = Flask(__name__)
 
 @app.route('/classify/<noofsignals>/', methods=['GET', 'POST'])
 def classify(noofsignals):
-	print ("test")
 	print ('cd 2pc_model_quantized_batches/ && ./server -a ' + HOST + ' -p '+str(TCP_PORT)+ ' -i ' + noofsignals)
 	# For local tests
 	#os.system('cd 2pc_model_quantized_batches/ && ./server -a 172.17.0.2 -p '+str(TCP_PORT)+ ' -i ' + noofsignals)
